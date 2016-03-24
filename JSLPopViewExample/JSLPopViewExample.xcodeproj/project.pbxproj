@@ -7,19 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		96C61FB61CA3FE8E00956AD4 /* JSLBlurredView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C61FAE1CA3FE8E00956AD4 /* JSLBlurredView.m */; };
+		96C61FB71CA3FE8E00956AD4 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C61FB11CA3FE8E00956AD4 /* UIImage+ImageEffects.m */; };
+		96C61FB81CA3FE8E00956AD4 /* UIImageView+LBBlurredImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C61FB31CA3FE8E00956AD4 /* UIImageView+LBBlurredImage.m */; };
+		96C61FB91CA3FE8E00956AD4 /* UIView+Screenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C61FB51CA3FE8E00956AD4 /* UIView+Screenshot.m */; };
 		96D7571C1CA39D0E00B7FE55 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D7571B1CA39D0E00B7FE55 /* main.m */; };
 		96D7571F1CA39D0E00B7FE55 /* JSLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D7571E1CA39D0E00B7FE55 /* JSLAppDelegate.m */; };
 		96D757221CA39D0E00B7FE55 /* JSLExampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D757211CA39D0E00B7FE55 /* JSLExampleController.m */; };
 		96D757271CA39D0E00B7FE55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96D757261CA39D0E00B7FE55 /* Assets.xcassets */; };
 		96D7572A1CA39D0E00B7FE55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96D757281CA39D0E00B7FE55 /* LaunchScreen.storyboard */; };
-		96D7573B1CA3BB9B00B7FE55 /* JSLBlurredView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D757331CA3BB9B00B7FE55 /* JSLBlurredView.m */; };
-		96D7573C1CA3BB9B00B7FE55 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D757361CA3BB9B00B7FE55 /* UIImage+ImageEffects.m */; };
-		96D7573D1CA3BB9B00B7FE55 /* UIImageView+LBBlurredImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D757381CA3BB9B00B7FE55 /* UIImageView+LBBlurredImage.m */; };
-		96D7573E1CA3BB9B00B7FE55 /* UIView+Screenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D7573A1CA3BB9B00B7FE55 /* UIView+Screenshot.m */; };
 		96D757411CA3C3DA00B7FE55 /* JSLBlurredFeatureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D757401CA3C3DA00B7FE55 /* JSLBlurredFeatureController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		96C61FAD1CA3FE8E00956AD4 /* JSLBlurredView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSLBlurredView.h; sourceTree = "<group>"; };
+		96C61FAE1CA3FE8E00956AD4 /* JSLBlurredView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSLBlurredView.m; sourceTree = "<group>"; };
+		96C61FAF1CA3FE8E00956AD4 /* JSLBurredBackgroundProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSLBurredBackgroundProtocol.h; sourceTree = "<group>"; };
+		96C61FB01CA3FE8E00956AD4 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		96C61FB11CA3FE8E00956AD4 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		96C61FB21CA3FE8E00956AD4 /* UIImageView+LBBlurredImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+LBBlurredImage.h"; sourceTree = "<group>"; };
+		96C61FB31CA3FE8E00956AD4 /* UIImageView+LBBlurredImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+LBBlurredImage.m"; sourceTree = "<group>"; };
+		96C61FB41CA3FE8E00956AD4 /* UIView+Screenshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Screenshot.h"; sourceTree = "<group>"; };
+		96C61FB51CA3FE8E00956AD4 /* UIView+Screenshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Screenshot.m"; sourceTree = "<group>"; };
 		96D757171CA39D0E00B7FE55 /* JSLPopViewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSLPopViewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96D7571B1CA39D0E00B7FE55 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		96D7571D1CA39D0E00B7FE55 /* JSLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSLAppDelegate.h; sourceTree = "<group>"; };
@@ -29,15 +38,6 @@
 		96D757261CA39D0E00B7FE55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96D757291CA39D0E00B7FE55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96D7572B1CA39D0E00B7FE55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		96D757321CA3BB9B00B7FE55 /* JSLBlurredView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSLBlurredView.h; sourceTree = "<group>"; };
-		96D757331CA3BB9B00B7FE55 /* JSLBlurredView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSLBlurredView.m; sourceTree = "<group>"; };
-		96D757341CA3BB9B00B7FE55 /* JSLBurredBackgroundProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSLBurredBackgroundProtocol.h; sourceTree = "<group>"; };
-		96D757351CA3BB9B00B7FE55 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
-		96D757361CA3BB9B00B7FE55 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
-		96D757371CA3BB9B00B7FE55 /* UIImageView+LBBlurredImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+LBBlurredImage.h"; sourceTree = "<group>"; };
-		96D757381CA3BB9B00B7FE55 /* UIImageView+LBBlurredImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+LBBlurredImage.m"; sourceTree = "<group>"; };
-		96D757391CA3BB9B00B7FE55 /* UIView+Screenshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Screenshot.h"; sourceTree = "<group>"; };
-		96D7573A1CA3BB9B00B7FE55 /* UIView+Screenshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Screenshot.m"; sourceTree = "<group>"; };
 		96D7573F1CA3C3DA00B7FE55 /* JSLBlurredFeatureController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSLBlurredFeatureController.h; sourceTree = "<group>"; };
 		96D757401CA3C3DA00B7FE55 /* JSLBlurredFeatureController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSLBlurredFeatureController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -53,6 +53,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		96C61FAC1CA3FE8E00956AD4 /* JSLPopView */ = {
+			isa = PBXGroup;
+			children = (
+				96C61FAD1CA3FE8E00956AD4 /* JSLBlurredView.h */,
+				96C61FAE1CA3FE8E00956AD4 /* JSLBlurredView.m */,
+				96C61FAF1CA3FE8E00956AD4 /* JSLBurredBackgroundProtocol.h */,
+				96C61FB01CA3FE8E00956AD4 /* UIImage+ImageEffects.h */,
+				96C61FB11CA3FE8E00956AD4 /* UIImage+ImageEffects.m */,
+				96C61FB21CA3FE8E00956AD4 /* UIImageView+LBBlurredImage.h */,
+				96C61FB31CA3FE8E00956AD4 /* UIImageView+LBBlurredImage.m */,
+				96C61FB41CA3FE8E00956AD4 /* UIView+Screenshot.h */,
+				96C61FB51CA3FE8E00956AD4 /* UIView+Screenshot.m */,
+			);
+			name = JSLPopView;
+			path = ../../JSLPopView;
+			sourceTree = "<group>";
+		};
 		96D7570E1CA39D0E00B7FE55 = {
 			isa = PBXGroup;
 			children = (
@@ -72,7 +89,7 @@
 		96D757191CA39D0E00B7FE55 /* JSLPopViewExample */ = {
 			isa = PBXGroup;
 			children = (
-				96D757311CA3BB9B00B7FE55 /* JSLPopView */,
+				96C61FAC1CA3FE8E00956AD4 /* JSLPopView */,
 				96D7571D1CA39D0E00B7FE55 /* JSLAppDelegate.h */,
 				96D7571E1CA39D0E00B7FE55 /* JSLAppDelegate.m */,
 				96D757201CA39D0E00B7FE55 /* JSLExampleController.h */,
@@ -93,22 +110,6 @@
 				96D7571B1CA39D0E00B7FE55 /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		96D757311CA3BB9B00B7FE55 /* JSLPopView */ = {
-			isa = PBXGroup;
-			children = (
-				96D757321CA3BB9B00B7FE55 /* JSLBlurredView.h */,
-				96D757331CA3BB9B00B7FE55 /* JSLBlurredView.m */,
-				96D757341CA3BB9B00B7FE55 /* JSLBurredBackgroundProtocol.h */,
-				96D757351CA3BB9B00B7FE55 /* UIImage+ImageEffects.h */,
-				96D757361CA3BB9B00B7FE55 /* UIImage+ImageEffects.m */,
-				96D757371CA3BB9B00B7FE55 /* UIImageView+LBBlurredImage.h */,
-				96D757381CA3BB9B00B7FE55 /* UIImageView+LBBlurredImage.m */,
-				96D757391CA3BB9B00B7FE55 /* UIView+Screenshot.h */,
-				96D7573A1CA3BB9B00B7FE55 /* UIView+Screenshot.m */,
-			);
-			path = JSLPopView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,14 +182,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96C61FB91CA3FE8E00956AD4 /* UIView+Screenshot.m in Sources */,
 				96D757221CA39D0E00B7FE55 /* JSLExampleController.m in Sources */,
+				96C61FB61CA3FE8E00956AD4 /* JSLBlurredView.m in Sources */,
+				96C61FB71CA3FE8E00956AD4 /* UIImage+ImageEffects.m in Sources */,
 				96D757411CA3C3DA00B7FE55 /* JSLBlurredFeatureController.m in Sources */,
-				96D7573E1CA3BB9B00B7FE55 /* UIView+Screenshot.m in Sources */,
-				96D7573C1CA3BB9B00B7FE55 /* UIImage+ImageEffects.m in Sources */,
+				96C61FB81CA3FE8E00956AD4 /* UIImageView+LBBlurredImage.m in Sources */,
 				96D7571F1CA39D0E00B7FE55 /* JSLAppDelegate.m in Sources */,
-				96D7573D1CA3BB9B00B7FE55 /* UIImageView+LBBlurredImage.m in Sources */,
 				96D7571C1CA39D0E00B7FE55 /* main.m in Sources */,
-				96D7573B1CA3BB9B00B7FE55 /* JSLBlurredView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
