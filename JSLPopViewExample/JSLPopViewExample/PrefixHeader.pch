@@ -1,0 +1,22 @@
+//
+//  PrefixHeader.pch
+//  JSLPopViewExample
+//
+//  Created by Jason_Lee on 16/3/30.
+//  Copyright © 2016年 Jason. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#ifdef __OBJC__
+
+#import "UIImage+JSLHelper.h"
+#import "JSLPopView.h"
+
+#endif
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */

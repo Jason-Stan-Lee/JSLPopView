@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+@interface JSLExampleModel : NSObject
+
+@property (nonatomic, copy) NSString *controllerName;
+@property (nonatomic, copy) NSString *title;
+
++ (instancetype)exampleModeWithControllerName:(NSString *)controllerName title:(NSString *)title;
+
+@end
+
 @interface JSLExampleController : UITableViewController
 
 

@@ -8,9 +8,9 @@
 
 
 #import <UIKit/UIKit.h>
-#import "JSLBurredBackgroundProtocol.h"
+#import "JSLBlurredBackgroundProtocol.h"
 
-@interface JSLBlurredView : UIView <JSLBurredBackgroundProtocol>
+@interface JSLBlurredView : UIView <JSLBlurredBackgroundProtocol>
 
 //  动态毛玻璃时有效
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_8_0

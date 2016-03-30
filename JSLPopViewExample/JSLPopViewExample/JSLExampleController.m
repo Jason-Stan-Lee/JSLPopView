@@ -7,6 +7,21 @@
 //
 
 #import "JSLExampleController.h"
+#import "JSLBlurredFeatureController.h"
+#import "JSLPopoverFeatureController.h"
+
+@implementation JSLExampleModel
+
++ (instancetype)exampleModeWithControllerName:(NSString *)controllerName title:(NSString *)title {
+    
+    JSLExampleModel *model = [[JSLExampleModel alloc] init];
+    model.controllerName = controllerName;
+    model.title = title;
+    
+    return model;
+}
+
+@end
 
 NSString *const cellId = @"cell";
 
@@ -30,7 +45,7 @@ NSString *const cellId = @"cell";
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return _features.count;
+    return self.features.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -38,14 +53,16 @@ NSString *const cellId = @"cell";
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
     }
-    
+    JSLExampleModel *model = self.features[indexPath.row];
+    cell.textLabel.text = model.title;
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    id controller = [[NSClassFromString(self.features[indexPath.row]) alloc] init];
-    if ([controller isKindOfClass:controller]) {
-        
+    JSLExampleModel *model = self.features[indexPath.row];
+    id controller = [[NSClassFromString(model.controllerName) alloc] init];
+    if ([controller isKindOfClass:[UIViewController class]]) {
+        [self.navigationController pushViewController:controller animated:YES];
     }
     
 }
@@ -54,7 +71,7 @@ NSString *const cellId = @"cell";
 
 - (NSArray *)features {
     if (!_features) {
-        _features = @[@"JSLBlurredFeatureController"];
+        _features = @[[JSLExampleModel exampleModeWithControllerName:@"JSLBlurredFeatureController" title:@"BlurredFeature"], [JSLExampleModel exampleModeWithControllerName:@"JSLPopoverFeatureController" title:@"PopoverFeaturer"]];
     }
     return _features;
 }

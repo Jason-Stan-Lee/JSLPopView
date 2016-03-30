@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9639E7E11CABD5AD0009D1A9 /* JSLPopoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9639E7DD1CABD5AD0009D1A9 /* JSLPopoverView.m */; };
+		9639E7E21CABD5AD0009D1A9 /* UIView+IntervalAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9639E7E01CABD5AD0009D1A9 /* UIView+IntervalAnimation.m */; };
+		9639E7E91CABD5C00009D1A9 /* JSLPopoverFeatureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9639E7E41CABD5C00009D1A9 /* JSLPopoverFeatureController.m */; };
+		9639E7EA1CABD5C00009D1A9 /* Resource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9639E7E61CABD5C00009D1A9 /* Resource.bundle */; };
+		9639E7EB1CABD5C00009D1A9 /* UIImage+JSLHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9639E7E81CABD5C00009D1A9 /* UIImage+JSLHelper.m */; };
 		96C61FB61CA3FE8E00956AD4 /* JSLBlurredView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C61FAE1CA3FE8E00956AD4 /* JSLBlurredView.m */; };
 		96C61FB71CA3FE8E00956AD4 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C61FB11CA3FE8E00956AD4 /* UIImage+ImageEffects.m */; };
 		96C61FB81CA3FE8E00956AD4 /* UIImageView+LBBlurredImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C61FB31CA3FE8E00956AD4 /* UIImageView+LBBlurredImage.m */; };
@@ -20,9 +25,21 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9639E7DA1CABD5AD0009D1A9 /* JSLBlurredBackgroundProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSLBlurredBackgroundProtocol.h; sourceTree = "<group>"; };
+		9639E7DB1CABD5AD0009D1A9 /* JSLConfigureMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSLConfigureMacro.h; sourceTree = "<group>"; };
+		9639E7DC1CABD5AD0009D1A9 /* JSLPopoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSLPopoverView.h; sourceTree = "<group>"; };
+		9639E7DD1CABD5AD0009D1A9 /* JSLPopoverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSLPopoverView.m; sourceTree = "<group>"; };
+		9639E7DE1CABD5AD0009D1A9 /* JSLPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSLPopView.h; sourceTree = "<group>"; };
+		9639E7DF1CABD5AD0009D1A9 /* UIView+IntervalAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+IntervalAnimation.h"; sourceTree = "<group>"; };
+		9639E7E01CABD5AD0009D1A9 /* UIView+IntervalAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+IntervalAnimation.m"; sourceTree = "<group>"; };
+		9639E7E31CABD5C00009D1A9 /* JSLPopoverFeatureController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSLPopoverFeatureController.h; sourceTree = "<group>"; };
+		9639E7E41CABD5C00009D1A9 /* JSLPopoverFeatureController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSLPopoverFeatureController.m; sourceTree = "<group>"; };
+		9639E7E51CABD5C00009D1A9 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		9639E7E61CABD5C00009D1A9 /* Resource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Resource.bundle; sourceTree = "<group>"; };
+		9639E7E71CABD5C00009D1A9 /* UIImage+JSLHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JSLHelper.h"; sourceTree = "<group>"; };
+		9639E7E81CABD5C00009D1A9 /* UIImage+JSLHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JSLHelper.m"; sourceTree = "<group>"; };
 		96C61FAD1CA3FE8E00956AD4 /* JSLBlurredView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSLBlurredView.h; sourceTree = "<group>"; };
 		96C61FAE1CA3FE8E00956AD4 /* JSLBlurredView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSLBlurredView.m; sourceTree = "<group>"; };
-		96C61FAF1CA3FE8E00956AD4 /* JSLBurredBackgroundProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSLBurredBackgroundProtocol.h; sourceTree = "<group>"; };
 		96C61FB01CA3FE8E00956AD4 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
 		96C61FB11CA3FE8E00956AD4 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 		96C61FB21CA3FE8E00956AD4 /* UIImageView+LBBlurredImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+LBBlurredImage.h"; sourceTree = "<group>"; };
@@ -53,12 +70,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9639E7EC1CABD5D30009D1A9 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				96D7571D1CA39D0E00B7FE55 /* JSLAppDelegate.h */,
+				96D7571E1CA39D0E00B7FE55 /* JSLAppDelegate.m */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		9639E7ED1CABD5E10009D1A9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				96D757201CA39D0E00B7FE55 /* JSLExampleController.h */,
+				96D757211CA39D0E00B7FE55 /* JSLExampleController.m */,
+				96D7573F1CA3C3DA00B7FE55 /* JSLBlurredFeatureController.h */,
+				96D757401CA3C3DA00B7FE55 /* JSLBlurredFeatureController.m */,
+				9639E7E31CABD5C00009D1A9 /* JSLPopoverFeatureController.h */,
+				9639E7E41CABD5C00009D1A9 /* JSLPopoverFeatureController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		9639E7EE1CABD6150009D1A9 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				9639E7E71CABD5C00009D1A9 /* UIImage+JSLHelper.h */,
+				9639E7E81CABD5C00009D1A9 /* UIImage+JSLHelper.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
 		96C61FAC1CA3FE8E00956AD4 /* JSLPopView */ = {
 			isa = PBXGroup;
 			children = (
+				9639E7DA1CABD5AD0009D1A9 /* JSLBlurredBackgroundProtocol.h */,
+				9639E7DB1CABD5AD0009D1A9 /* JSLConfigureMacro.h */,
+				9639E7DC1CABD5AD0009D1A9 /* JSLPopoverView.h */,
+				9639E7DD1CABD5AD0009D1A9 /* JSLPopoverView.m */,
+				9639E7DE1CABD5AD0009D1A9 /* JSLPopView.h */,
+				9639E7DF1CABD5AD0009D1A9 /* UIView+IntervalAnimation.h */,
+				9639E7E01CABD5AD0009D1A9 /* UIView+IntervalAnimation.m */,
 				96C61FAD1CA3FE8E00956AD4 /* JSLBlurredView.h */,
 				96C61FAE1CA3FE8E00956AD4 /* JSLBlurredView.m */,
-				96C61FAF1CA3FE8E00956AD4 /* JSLBurredBackgroundProtocol.h */,
 				96C61FB01CA3FE8E00956AD4 /* UIImage+ImageEffects.h */,
 				96C61FB11CA3FE8E00956AD4 /* UIImage+ImageEffects.m */,
 				96C61FB21CA3FE8E00956AD4 /* UIImageView+LBBlurredImage.h */,
@@ -90,14 +144,13 @@
 			isa = PBXGroup;
 			children = (
 				96C61FAC1CA3FE8E00956AD4 /* JSLPopView */,
-				96D7571D1CA39D0E00B7FE55 /* JSLAppDelegate.h */,
-				96D7571E1CA39D0E00B7FE55 /* JSLAppDelegate.m */,
-				96D757201CA39D0E00B7FE55 /* JSLExampleController.h */,
-				96D757211CA39D0E00B7FE55 /* JSLExampleController.m */,
-				96D7573F1CA3C3DA00B7FE55 /* JSLBlurredFeatureController.h */,
-				96D757401CA3C3DA00B7FE55 /* JSLBlurredFeatureController.m */,
+				9639E7EC1CABD5D30009D1A9 /* Other */,
+				9639E7ED1CABD5E10009D1A9 /* Controller */,
+				9639E7EE1CABD6150009D1A9 /* Category */,
+				9639E7E61CABD5C00009D1A9 /* Resource.bundle */,
 				96D757261CA39D0E00B7FE55 /* Assets.xcassets */,
 				96D757281CA39D0E00B7FE55 /* LaunchScreen.storyboard */,
+				9639E7E51CABD5C00009D1A9 /* PrefixHeader.pch */,
 				96D7572B1CA39D0E00B7FE55 /* Info.plist */,
 				96D7571A1CA39D0E00B7FE55 /* Supporting Files */,
 			);
@@ -170,6 +223,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9639E7EA1CABD5C00009D1A9 /* Resource.bundle in Resources */,
 				96D7572A1CA39D0E00B7FE55 /* LaunchScreen.storyboard in Resources */,
 				96D757271CA39D0E00B7FE55 /* Assets.xcassets in Resources */,
 			);
@@ -183,13 +237,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				96C61FB91CA3FE8E00956AD4 /* UIView+Screenshot.m in Sources */,
+				9639E7E91CABD5C00009D1A9 /* JSLPopoverFeatureController.m in Sources */,
 				96D757221CA39D0E00B7FE55 /* JSLExampleController.m in Sources */,
 				96C61FB61CA3FE8E00956AD4 /* JSLBlurredView.m in Sources */,
 				96C61FB71CA3FE8E00956AD4 /* UIImage+ImageEffects.m in Sources */,
+				9639E7E21CABD5AD0009D1A9 /* UIView+IntervalAnimation.m in Sources */,
 				96D757411CA3C3DA00B7FE55 /* JSLBlurredFeatureController.m in Sources */,
 				96C61FB81CA3FE8E00956AD4 /* UIImageView+LBBlurredImage.m in Sources */,
 				96D7571F1CA39D0E00B7FE55 /* JSLAppDelegate.m in Sources */,
 				96D7571C1CA39D0E00B7FE55 /* main.m in Sources */,
+				9639E7E11CABD5AD0009D1A9 /* JSLPopoverView.m in Sources */,
+				9639E7EB1CABD5C00009D1A9 /* UIImage+JSLHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +351,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/JSLPopViewExample/PrefixHeader.pch";
 				INFOPLIST_FILE = JSLPopViewExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -305,6 +364,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/JSLPopViewExample/PrefixHeader.pch";
 				INFOPLIST_FILE = JSLPopViewExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

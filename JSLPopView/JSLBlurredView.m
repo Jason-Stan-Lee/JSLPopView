@@ -112,26 +112,26 @@
 - (void)updateBlurredWithWindow:(UIWindow *)window {
     [self clearBlurred];    //  清除毛玻璃效果
     
-    window = window?:self.window;
+    window = window?:(self.window?:[UIApplication sharedApplication].keyWindow);
     
     //  获取应该显示的毛玻璃类型
-    JSLBurredBackgroundType currentBlurredBackgroundType = JSLBurredBackgroundTypeNone;
-    if (self.blurredBackgroundType == JSLBurredBackgroundTypeStatic) {
+    JSLBlurredBackgroundType currentBlurredBackgroundType = JSLBlurredBackgroundTypeStatic;
+    if (self.blurredBackgroundType == JSLBlurredBackgroundTypeStatic) {
         if (window) {
-            currentBlurredBackgroundType = JSLBurredBackgroundTypeStatic;
+            currentBlurredBackgroundType = JSLBlurredBackgroundTypeStatic;
         } else {
             NSLog(@"%@当前没有参照window或添加到window中,无法添加静态毛玻璃效果,已取消显示",NSStringFromClass([self class]));
         }
     }
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_8_0
-    else if (self.blurredBackgroundType == JSLBurredBackgroundTypeDynamic) {
+    else if (self.blurredBackgroundType == JSLBlurredBackgroundTypeStatic) {
         
         if ([UIDevice currentDevice].systemVersion.floatValue >= 8.f) {
-            currentBlurredBackgroundType = JSLBurredBackgroundTypeDynamic;
+            currentBlurredBackgroundType = JSLBlurredBackgroundTypeStatic;
         } else {
             NSLog(@"IOS 8 一下的版本不支持动态毛玻璃效果效果, 以转为静态毛玻璃效果");
             if (window) {
-                currentBlurredBackgroundType = JSLBurredBackgroundTypeStatic;
+                currentBlurredBackgroundType = JSLBlurredBackgroundTypeStatic;
             } else {
                 NSLog(@"%@当前没有参照window或添加到window,无法添加静态毛玻璃效果,已取消",NSStringFromClass([self class]));
             }
@@ -141,7 +141,7 @@
 #endif
     
     //  设置毛玻璃效果
-    if (currentBlurredBackgroundType == JSLBurredBackgroundTypeStatic) {
+    if (currentBlurredBackgroundType == JSLBlurredBackgroundTypeStatic) {
         //  截屏
         UIImage *blurredImage = [window convertViewToImageWithRetina:NO];
         if (self.applyBlurredEffectBlock) {
@@ -155,7 +155,7 @@
     }
     
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_8_0
-    else if (currentBlurredBackgroundType == JSLBurredBackgroundTypeDynamic) {
+    else if (currentBlurredBackgroundType == JSLBlurredBackgroundTypeStatic) {
         UIVisualEffectView *blurredEffectView = [[UIVisualEffectView alloc] initWithEffect:[UIBlurEffect effectWithStyle:self.blureEffectStyle]];
         _blurredEffectView = blurredEffectView;
         _blurredEffectView.alpha = self.blureEffectAlpha;

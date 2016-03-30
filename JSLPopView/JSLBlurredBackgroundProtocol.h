@@ -9,26 +9,26 @@
 #import <Foundation/Foundation.h>
 #import <AvailabilityInternal.h>
 
-#ifndef __JSLBurredBackgroundProtocol_h
-#define __JSLBurredBackgroundProtocol_h
+#ifndef __JSLBlurredBackgroundProtocol_h
+#define __JSLBlurredBackgroundProtocol_h
 
-typedef NS_ENUM(NSInteger, JSLBurredBackgroundType) {
-    JSLBurredBackgroundTypeNone,    //  无
-    JSLBurredBackgroundTypeStatic   //  静态
+typedef NS_ENUM(NSInteger, JSLBlurredBackgroundType) {
+    JSLBlurredBackgroundTypeNone,    //  无
+    JSLBlurredBackgroundTypeStatic   //  静态
     
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_8_0 //  低版本的编译器不会报错,但是运行在低版本的设备上,会崩溃, 用来debug的
-    ,JSLBurredBackgroundTypeDynamic //  动态
+    ,JSLBlurredBackgroundTypeDynamic //  动态
 #endif
 };
 
-typedef UIImage *(^JSLApplyBurredEffectBlock)(UIImage *image);
+typedef UIImage *(^JSLApplyBlurredEffectBlock)(UIImage *image);
 
-@protocol JSLBurredBackgroundProtocol
+@protocol JSLBlurredBackgroundProtocol
 
 //  毛玻璃背景类型
-@property (nonatomic) JSLBurredBackgroundType blurredBackgroundType;
+@property (nonatomic) JSLBlurredBackgroundType blurredBackgroundType;
 //  添加毛玻璃效果的block,对于静态毛玻璃效果有效
-@property (nonatomic, copy) JSLApplyBurredEffectBlock applyBlurredEffectBlock;
+@property (nonatomic, copy) JSLApplyBlurredEffectBlock applyBlurredEffectBlock;
 
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_8_0
 
