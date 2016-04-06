@@ -7,9 +7,11 @@
 //
 
 #import "JSLPopoverView.h"
+
+#import "JSLConfigureMacro.h"
 #import "UIView+Screenshot.h"
 #import "UIImage+ImageEffects.h"
-#import "JSLConfigureMacro.h"
+#import "UIView+IntervalAnimation.h"
 
 @interface JSLPopoverView ()
 
@@ -111,7 +113,7 @@
         CGFloat boundsHeight = CGRectGetHeight(self.bounds);
         CGSize contentViewSize = self.contentViewSize;
         
-        if (!CGSizeEqualToSize(contentViewSize, CGSizeZero)) {
+        if (CGSizeEqualToSize(contentViewSize, CGSizeZero)) {
             
             if (!CGSizeEqualToSize(self.contentViewSizeScale, CGSizeZero)) {
                 contentViewSize.width = boundsWidth * self.contentViewSizeScale.width;

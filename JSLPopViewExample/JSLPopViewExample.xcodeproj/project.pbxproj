@@ -104,21 +104,21 @@
 		96C61FAC1CA3FE8E00956AD4 /* JSLPopView */ = {
 			isa = PBXGroup;
 			children = (
+				9639E7DE1CABD5AD0009D1A9 /* JSLPopView.h */,
 				9639E7DA1CABD5AD0009D1A9 /* JSLBlurredBackgroundProtocol.h */,
-				9639E7DB1CABD5AD0009D1A9 /* JSLConfigureMacro.h */,
 				9639E7DC1CABD5AD0009D1A9 /* JSLPopoverView.h */,
 				9639E7DD1CABD5AD0009D1A9 /* JSLPopoverView.m */,
-				9639E7DE1CABD5AD0009D1A9 /* JSLPopView.h */,
-				9639E7DF1CABD5AD0009D1A9 /* UIView+IntervalAnimation.h */,
-				9639E7E01CABD5AD0009D1A9 /* UIView+IntervalAnimation.m */,
 				96C61FAD1CA3FE8E00956AD4 /* JSLBlurredView.h */,
 				96C61FAE1CA3FE8E00956AD4 /* JSLBlurredView.m */,
-				96C61FB01CA3FE8E00956AD4 /* UIImage+ImageEffects.h */,
-				96C61FB11CA3FE8E00956AD4 /* UIImage+ImageEffects.m */,
-				96C61FB21CA3FE8E00956AD4 /* UIImageView+LBBlurredImage.h */,
-				96C61FB31CA3FE8E00956AD4 /* UIImageView+LBBlurredImage.m */,
+				9639E7DF1CABD5AD0009D1A9 /* UIView+IntervalAnimation.h */,
+				9639E7E01CABD5AD0009D1A9 /* UIView+IntervalAnimation.m */,
 				96C61FB41CA3FE8E00956AD4 /* UIView+Screenshot.h */,
 				96C61FB51CA3FE8E00956AD4 /* UIView+Screenshot.m */,
+				96C61FB21CA3FE8E00956AD4 /* UIImageView+LBBlurredImage.h */,
+				96C61FB31CA3FE8E00956AD4 /* UIImageView+LBBlurredImage.m */,
+				96C61FB01CA3FE8E00956AD4 /* UIImage+ImageEffects.h */,
+				96C61FB11CA3FE8E00956AD4 /* UIImage+ImageEffects.m */,
+				9639E7DB1CABD5AD0009D1A9 /* JSLConfigureMacro.h */,
 			);
 			name = JSLPopView;
 			path = ../../JSLPopView;
@@ -197,6 +197,7 @@
 				TargetAttributes = {
 					96D757161CA39D0E00B7FE55 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 27VVJV9R7L;
 					};
 				};
 			};
@@ -351,12 +352,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/JSLPopViewExample/PrefixHeader.pch";
 				INFOPLIST_FILE = JSLPopViewExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.JasonStanLee.JSLPopView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -364,12 +368,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/JSLPopViewExample/PrefixHeader.pch";
 				INFOPLIST_FILE = JSLPopViewExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.JasonStanLee.JSLPopView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

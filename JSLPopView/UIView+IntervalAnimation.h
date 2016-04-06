@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JSLConfigureMacro.h"
 
 @interface UIView (IntervalAnimation)
 
 - (NSArray *)needAnimatedViewsForShow:(BOOL)show context:(id)context;
-//- (NSArray *)needAnimatedViewsWithDirection:
+- (NSArray *)needAnimatedViewsWithDirection:(MoveAnimtedDirection)moveAnimatedDirection forShow:(BOOL)show context:(id)context;
 
 @end

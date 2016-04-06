@@ -26,14 +26,9 @@
 
 - (void)popView:(id)sender {
     
-    UIView *contentView = [[UIView alloc] initWithFrame:CGRectMake(100, 100, 200, 200)];
-    contentView.backgroundColor = [UIColor greenColor];
-    UILabel *label = [[UILabel alloc] initWithFrame:contentView.bounds];
-    label.text = @"contentView";
-    [contentView addSubview:label];
-    
+    UIImageView *contentView = [[UIImageView alloc] initWithImage:[UIImage jsl_bundleImageNamed:@"content.jpg"]];
     JSLPopoverView *popView = [[JSLPopoverView alloc] initWithContentView:contentView];
-    popView.contentViewSize = CGSizeMake(100, 100);
+    popView.contentViewSize = CGSizeMake(150, 300);
     popView.adjustContentViewFrameWhenNoContain = YES;
     [popView show:YES];
 }
